@@ -16,7 +16,7 @@
             applications.
           </p>
           <p>
-            For more information on Vuetify, check out the
+            For more information on Vuetify, check out thes
             <a
               href="https://vuetifyjs.com"
               target="_blank"
