@@ -18,17 +18,20 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar flat clipped-left fixed app>
+    <v-app-bar color="#66CB9C" dark flat clipped-left fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
     </v-app-bar>
-    <v-main>
+    <v-main
+      class="d-flex align-center justify-center"
+      style="background: #93a392"
+    >
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -41,17 +44,17 @@ export default {
       drawer: true,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-calendar',
           title: 'Welcome',
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          icon: 'mdi-account-multiple',
+          title: 'Users',
+          to: '/users',
         },
       ],
-      title: 'Vuetify.js',
+      title: 'MASTROSIFIS',
     }
   },
 }
